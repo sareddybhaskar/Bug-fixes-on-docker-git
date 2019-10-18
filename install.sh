@@ -2,7 +2,7 @@
 
 # This script must be run as root
 
-DOCKER_COMPOSE_VERSION="1.24.1"
+DOCKER_COMPOSE_VERSION="3.5"
 
 
 if ! [ -x "$(command -v curl)" ]; then
@@ -45,6 +45,5 @@ function install_docker_cleanup() {
 }
 
 install_docker
-install_docker_compose
-install_docker_compose_completion
 install_docker_cleanup
+docker version
